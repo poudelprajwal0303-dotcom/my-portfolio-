@@ -11,7 +11,7 @@ const DEFAULT_ACHIEVEMENTS = [
   {
     id: 'ach-01',
     number: '01',
-    title: 'Self-Taught Web & Tech Experimenter',
+    title: 'Getting Into Web Designing',
     description: 'Independently built and deployed live digital projects from Butwal, mastering modern web architecture and creative design tools without formal mentorship.',
     year: '2025',
     category: 'SKILL & CODE',
@@ -20,26 +20,18 @@ const DEFAULT_ACHIEVEMENTS = [
   {
     id: 'ach-02',
     number: '02',
-    title: 'First High-Altitude Himalayan Trek',
-    description: 'Completed my first independent multi-day mountain trek into the Himalayan foothills, pushing personal endurance limits and documenting high-altitude landscapes.',
+    title: 'Dreamt of trekking in the mountains',
+    description: 'I am very much interested in Mountains and the Landscapes. ',
     year: '2024',
     category: 'EXPEDITION & HEALTH',
     highlight: 'High Altitude Resilience'
   },
-  {
-    id: 'ach-03',
-    number: '03',
-    title: 'Digital Content & Community Builder',
-    description: 'Authored visual stories and creative media showcasing youth perspectives in Nepal, cultivating an engaged local network of peers passionate about technology.',
-    year: '2025',
-    category: 'CREATIVE & COMMUNITY',
-    highlight: 'Organic Reach'
-  },
+
   {
     id: 'ach-04',
     number: '04',
-    title: 'Academic & Personal Discipline',
-    description: 'Balanced rigorous secondary schooling with daily coding sessions, fitness training, and continuous self-education to build a solid foundation for the future.',
+    title: 'Academic & Personal Growth',
+    description: 'Balanced  secondary schooling with sessions, fitness training, and continuous self-education to build a solid foundation for the future.',
     year: '2026',
     category: 'MILESTONE & GROWTH',
     highlight: 'Daily Consistency'
@@ -108,7 +100,7 @@ const PROJECTS_DATA = {
     category: 'CREATIVE CONTENT / CINEMATOGRAPHY',
     year: '2026',
     role: 'Director & Editor',
-    imageUrl: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80',
+    imageUrl: 'https://www.reddit.com/r/pics/comments/a9r61/nepal_pic/#lightbox',
     description: 'A continuous series of short cinematic videos and visual reels highlighting early morning street life in Butwal, hillside tea gardens, and the quiet dignity of everyday workers.',
     technologies: ['Premiere Pro', 'Color Grading', 'Sound Design']
   },
