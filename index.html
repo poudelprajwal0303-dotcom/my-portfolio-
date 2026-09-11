@@ -1,0 +1,1412 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prajwal Poudel — Personal Portfolio & Journey</title>
+    <meta name="description" content="Clean, modern, and responsive personal portfolio of Prajwal Poudel — 16-year-old creator, web builder, and student from Butwal, Nepal." />
+    <meta property="og:title" content="Prajwal Poudel — Personal Portfolio & Journey" />
+    <meta property="og:description" content="Clean, modern, and responsive personal portfolio of Prajwal Poudel — 16-year-old creator, web builder, and student from Butwal, Nepal." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="bg-grain">
+    <!-- Atmospheric Fixed Global Background -->
+    <div class="bg-atmosphere" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=2400&q=80"
+        alt=""
+        class="bg-atmosphere-img"
+      />
+      <div class="bg-atmosphere-overlay"></div>
+    </div>
+
+    <!-- Main Header & Navigation Bar -->
+    <header class="header glass-nav" id="main-header">
+      <div class="container nav-container">
+        <a href="#hero" class="nav-brand" id="brand-link" aria-label="Prajwal Poudel home">
+          <span class="brand-name">PRAJWAL POUDEL</span>
+          <span class="brand-meta font-mono">
+            <span class="status-dot"></span>
+            <span>BUTWAL, NP · <span id="live-nepal-time">--:--:-- NPT</span></span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="nav-desktop" aria-label="Main Navigation">
+          <a href="#about" class="nav-link font-mono" id="nav-link-about">ABOUT</a>
+          <a href="#journey" class="nav-link font-mono" id="nav-link-journey">JOURNEY</a>
+          <a href="#achievements" class="nav-link font-mono" id="nav-link-achievements">ACHIEVEMENTS</a>
+          <a href="#work" class="nav-link font-mono" id="nav-link-work">WORK</a>
+          <a href="#nepal" class="nav-link font-mono" id="nav-link-nepal">NEPAL</a>
+          <a href="#contact" class="nav-link font-mono" id="nav-link-contact">CONTACT</a>
+        </nav>
+
+        <!-- Navbar Actions: Theme Toggle, Custom Photo, Mobile Toggle -->
+        <div class="nav-actions">
+          <button
+            type="button"
+            class="theme-toggle-btn"
+            id="theme-toggle-btn"
+            title="Toggle theme (Dark / Light)"
+            aria-label="Toggle theme"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <button
+            type="button"
+            class="nav-action-pill"
+            id="open-photo-modal-header-btn"
+            data-action="open-photo-modal"
+            title="Customize personal portrait"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+            <span>MY PHOTO</span>
+          </button>
+
+          <button
+            type="button"
+            class="mobile-menu-btn"
+            id="mobile-menu-toggle-btn"
+            aria-label="Toggle Navigation Menu"
+            aria-expanded="false"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <a href="#about" class="mobile-nav-link" id="mobile-link-about">ABOUT</a>
+      <a href="#journey" class="mobile-nav-link" id="mobile-link-journey">JOURNEY</a>
+      <a href="#achievements" class="mobile-nav-link" id="mobile-link-achievements">ACHIEVEMENTS</a>
+      <a href="#work" class="mobile-nav-link" id="mobile-link-work">WORK</a>
+      <a href="#nepal" class="mobile-nav-link" id="mobile-link-nepal">NEPAL</a>
+      <a href="#contact" class="mobile-nav-link" id="mobile-link-contact">CONTACT</a>
+    </div>
+
+    <!-- Page Content Wrapper -->
+    <main class="page-wrapper" id="main-content">
+      <!-- HERO SECTION -->
+      <section class="hero-section container" id="hero">
+        <div class="hero-glow-1" aria-hidden="true"></div>
+        <div class="hero-glow-2" aria-hidden="true"></div>
+
+        <!-- Top Meta Row -->
+        <div class="hero-top-meta">
+          <span>PERSONAL PORTFOLIO &amp; DIGITAL STORY</span>
+          <span>AGE 16 // INDEPENDENT CREATOR</span>
+          <span style="display: inline-flex; align-items: center; gap: 0.4rem;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            27°42' N, 83°27' E
+          </span>
+        </div>
+
+        <!-- Center Monumental Title Body -->
+        <div class="hero-center-body">
+          <div class="hero-origin-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span>BUTWAL, NEPAL</span>
+          </div>
+
+          <h1 class="hero-title" aria-label="Prajwal Poudel">
+            <span class="hero-title-line">PRAJWAL</span>
+            <span class="hero-title-line text-stroke">POUDEL</span>
+          </h1>
+
+          <div class="hero-tagline-wrap">
+            <p class="hero-tagline">
+              “Building my journey, one step at a time.”
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero Bottom Bar -->
+        <div class="hero-bottom-bar">
+          <div class="hero-location-badge">
+            <span class="status-dot"></span>
+            <span>BUTWAL, NEPAL · CHURE HILLS &amp; TARAI GATEWAY</span>
+          </div>
+
+          <a href="#intro" class="hero-scroll-btn" id="hero-scroll-down-btn">
+            <span>SCROLL TO EXPLORE</span>
+            <div class="scroll-indicator-circle">↓</div>
+          </a>
+        </div>
+      </section>
+
+      <!-- 01 / INTRODUCTION SECTION -->
+      <section class="section container reveal-on-scroll" id="intro">
+        <div class="section-eyebrow">
+          <span class="eyebrow-line"></span>
+          <span>01 / MANIFESTO &amp; ORIGINS</span>
+        </div>
+
+        <h2 class="intro-headline">
+          THIS IS WHERE MY JOURNEY <span class="text-stroke">BEGINS.</span>
+        </h2>
+
+        <div class="intro-grid">
+          <div class="intro-card glass-surface">
+            <div class="intro-card-header">
+              <span>ORIGIN: BUTWAL, NEPAL</span>
+              <span>AGE 16</span>
+            </div>
+            <p style="font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.65;">
+              Middle-class roots, relentless work ethic. No shortcuts, just curiosity, open-source code, and high-altitude perspective.
+            </p>
+          </div>
+
+          <div>
+            <p class="intro-lead">
+              I am a 16-year-old creator from Butwal, Nepal. I come from a middle-class background, and I believe the future belongs to those willing to build it with their own hands.
+            </p>
+            <p class="intro-paragraph">
+              I do not claim to have everything figured out or to be an industry veteran. What I do have is genuine curiosity, the discipline to sit at a keyboard for hours learning how things work, a deep love for my country, and the conviction that where you start does not define where you can go.
+            </p>
+            <div class="intro-tags">
+              <span>[ AUTHENTIC GROWTH ]</span>
+              <span>[ NO CORPORATE PRETENSE ]</span>
+              <span>[ UNWRITTEN CHAPTERS ]</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 / ABOUT ME SECTION -->
+      <section class="section container reveal-on-scroll" id="about">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span>02 / IDENTITY &amp; CONTEXT</span>
+            </div>
+            <h2 class="section-title">ABOUT ME</h2>
+          </div>
+          <div class="font-mono" style="font-size: 0.75rem; color: var(--color-text-muted); letter-spacing: 0.15em;">
+            <span class="status-dot"></span> STATUS: EXPLORING &amp; BUILDING · HOMETOWN: BUTWAL
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Portrait Specimen Frame -->
+          <div class="portrait-container">
+            <div class="portrait-frame">
+              <img
+                src="/prajwal_portrait.jpg"
+                alt="Prajwal Poudel"
+                class="portrait-img dynamic-portrait-img"
+                id="main-portrait-img"
+              />
+              <div class="portrait-gradient-overlay"></div>
+
+              <div class="portrait-controls">
+                <button
+                  type="button"
+                  class="portrait-btn"
+                  id="portrait-replace-btn"
+                  data-action="open-photo-modal"
+                  title="Replace portrait photo"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                  <span>REPLACE</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="portrait-btn"
+                  id="portrait-reset-btn"
+                  style="display: none;"
+                  title="Reset to official portrait"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                  <span>RESET</span>
+                </button>
+              </div>
+
+              <div class="portrait-card-watermark">
+                <div>
+                  <span class="spec-label" style="color: rgba(255,255,255,0.7);">PORTRAIT SPECIMEN</span>
+                  <div class="portrait-specimen-title">Prajwal Poudel</div>
+                  <div class="font-mono" style="font-size: 0.7rem; color: rgba(255,255,255,0.75);">16 Years Old · Butwal, Nepal</div>
+                </div>
+                <div class="font-mono" style="font-size: 0.7rem; color: rgba(255,255,255,0.6);">
+                  2026 ARCHIVE
+                </div>
+              </div>
+            </div>
+
+            <!-- Subcaption with direct file upload trigger -->
+            <div class="portrait-subcaption">
+              <label for="portrait-direct-file-input" style="cursor: pointer; display: inline-flex; align-items: center; gap: 0.4rem; color: var(--color-text-secondary);" title="Upload photo file directly">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                <span>UPLOAD OWN IMAGE</span>
+              </label>
+              <input type="file" id="portrait-direct-file-input" accept="image/*" style="display: none;" />
+              <span>NEPAL HIMALAYAS</span>
+            </div>
+          </div>
+
+          <!-- About Details Column -->
+          <div>
+            <div class="about-specs-grid">
+              <div class="about-spec-box glass-surface">
+                <span class="spec-label">LEGAL NAME</span>
+                <span class="spec-value">Prajwal Poudel</span>
+              </div>
+              <div class="about-spec-box glass-surface">
+                <span class="spec-label">CURRENT AGE</span>
+                <span class="spec-value">16 Years Old</span>
+              </div>
+              <div class="about-spec-box glass-surface span-2">
+                <span class="spec-label">LOCATION &amp; ORIGIN</span>
+                <span class="spec-value">Butwal, Nepal · Lumbini Province</span>
+                <span class="font-mono" style="font-size: 0.72rem; color: var(--color-text-muted); display: block; margin-top: 0.25rem;">
+                  Coordinates: 27°42' N, 83°27' E · Gateway between hills and plains
+                </span>
+              </div>
+            </div>
+
+            <!-- Core Interests Chips -->
+            <div class="interests-chip-box glass-surface">
+              <span class="spec-label">CORE INTERESTS &amp; PURSUITS</span>
+              <div class="interests-chips">
+                <span class="interest-chip">Technology</span>
+                <span class="interest-chip">Creativity</span>
+                <span class="interest-chip">Trekking</span>
+                <span class="interest-chip">Mountains</span>
+                <span class="interest-chip">Content Creation</span>
+                <span class="interest-chip">Continuous Learning</span>
+              </div>
+            </div>
+
+            <!-- Quote Block -->
+            <div class="about-quote-box">
+              <blockquote class="about-quote">
+                “I'm still at the beginning of my journey. I don't have everything figured out yet, but I believe that consistent effort, curiosity and the courage to start can take me somewhere meaningful.”
+              </blockquote>
+              <div class="about-quote-author">
+                — Prajwal Poudel · Butwal, Nepal
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 / MY JOURNEY SECTION -->
+      <section class="section container reveal-on-scroll" id="journey">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span>03 / EVOLUTION &amp; STEPS</span>
+            </div>
+            <h2 class="section-title">MY JOURNEY</h2>
+          </div>
+          <p class="section-subtitle">
+            Five milestones shaping my trajectory from a curious schoolboy in Butwal to an active builder and mountain trekker.
+          </p>
+        </div>
+
+        <div class="journey-track-wrapper">
+          <div class="journey-vertical-line"></div>
+          <div class="journey-milestones">
+            <!-- Milestone 01 -->
+            <div class="milestone-card active" id="milestone-1">
+              <div class="milestone-main-row">
+                <div class="milestone-left-cluster">
+                  <div class="milestone-badge-box">
+                    <div class="milestone-number">01</div>
+                    <span class="milestone-period">STEP 01</span>
+                  </div>
+                  <div>
+                    <div class="milestone-meta-row">
+                      <span>EARLY CURIOSITY</span>
+                    </div>
+                    <h3 class="milestone-title">THE BEGINNING</h3>
+                    <p class="milestone-desc">
+                      Started exploring my interests and learning new skills. Drawn to the endless potential of personal computers and digital media from my hometown in Butwal.
+                    </p>
+                  </div>
+                </div>
+                <div class="milestone-expand-hint">
+                  <span>DETAILS</span>
+                  <svg class="milestone-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+              </div>
+              <div class="milestone-details-expanded">
+                <div class="milestone-reflection-grid">
+                  <span class="reflection-tag">REFLECTION</span>
+                  <p class="reflection-text">
+                    Curiosity is free. Growing up in Butwal, YouTube tutorials, open-source articles, and trial-and-error became my greatest classroom.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 02 -->
+            <div class="milestone-card" id="milestone-2">
+              <div class="milestone-main-row">
+                <div class="milestone-left-cluster">
+                  <div class="milestone-badge-box">
+                    <div class="milestone-number">02</div>
+                    <span class="milestone-period">STEP 02</span>
+                  </div>
+                  <div>
+                    <div class="milestone-meta-row">
+                      <span>FOUNDATIONS &amp; CODE</span>
+                    </div>
+                    <h3 class="milestone-title">LEARNING</h3>
+                    <p class="milestone-desc">
+                      Started experimenting with technology, creativity and content. Self-studying web technologies, digital design principles, video editing techniques, and hardware architectures.
+                    </p>
+                  </div>
+                </div>
+                <div class="milestone-expand-hint">
+                  <span>DETAILS</span>
+                  <svg class="milestone-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+              </div>
+              <div class="milestone-details-expanded">
+                <div class="milestone-reflection-grid">
+                  <span class="reflection-tag">REFLECTION</span>
+                  <p class="reflection-text">
+                    Learning without formal mentors requires patience. I discovered that reading documentation and writing code line-by-line demystified technology faster than any shortcut.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 03 -->
+            <div class="milestone-card" id="milestone-3">
+              <div class="milestone-main-row">
+                <div class="milestone-left-cluster">
+                  <div class="milestone-badge-box">
+                    <div class="milestone-number">03</div>
+                    <span class="milestone-period">STEP 03</span>
+                  </div>
+                  <div>
+                    <div class="milestone-meta-row">
+                      <span>ACTIVE PROTOTYPING</span>
+                    </div>
+                    <h3 class="milestone-title">CREATING</h3>
+                    <p class="milestone-desc">
+                      Started building projects and developing my online presence. Deploying my first live websites, crafting visual identities, and collaborating with local peers.
+                    </p>
+                  </div>
+                </div>
+                <div class="milestone-expand-hint">
+                  <span>DETAILS</span>
+                  <svg class="milestone-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+              </div>
+              <div class="milestone-details-expanded">
+                <div class="milestone-reflection-grid">
+                  <span class="reflection-tag">REFLECTION</span>
+                  <p class="reflection-text">
+                    Building something real shifts your mindset. Shipping working web projects to the internet taught me accountability and pride in my output.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 04 -->
+            <div class="milestone-card" id="milestone-4">
+              <div class="milestone-main-row">
+                <div class="milestone-left-cluster">
+                  <div class="milestone-badge-box">
+                    <div class="milestone-number">04</div>
+                    <span class="milestone-period">STEP 04</span>
+                  </div>
+                  <div>
+                    <div class="milestone-meta-row">
+                      <span>SILENT EXPLORATION</span>
+                    </div>
+                    <h3 class="milestone-title">EXPLORING</h3>
+                    <p class="milestone-desc">
+                      Exploring the new world of technology and craving to learn about it through a small US device in a room where silence is your best friend.
+                    </p>
+                  </div>
+                </div>
+                <div class="milestone-expand-hint">
+                  <span>DETAILS</span>
+                  <svg class="milestone-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+              </div>
+              <div class="milestone-details-expanded">
+                <div class="milestone-reflection-grid">
+                  <span class="reflection-tag">REFLECTION</span>
+                  <p class="reflection-text">
+                    In deep quiet, concentration transforms into skill. Armed with just a computer, I explore international tech movements, cloud networks, and creative media.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Milestone 05 -->
+            <div class="milestone-card" id="milestone-5">
+              <div class="milestone-main-row">
+                <div class="milestone-left-cluster">
+                  <div class="milestone-badge-box">
+                    <div class="milestone-number">05</div>
+                    <span class="milestone-period">STEP 05</span>
+                  </div>
+                  <div>
+                    <div class="milestone-meta-row">
+                      <span>UNWRITTEN FUTURE</span>
+                    </div>
+                    <h3 class="milestone-title">WHAT'S NEXT</h3>
+                    <p class="milestone-desc">
+                      Continue learning, creating and building my future. Pursuing higher technical mastery, expanding digital commerce solutions, and trekking higher Himalayan trails.
+                    </p>
+                  </div>
+                </div>
+                <div class="milestone-expand-hint">
+                  <span>DETAILS</span>
+                  <svg class="milestone-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+              </div>
+              <div class="milestone-details-expanded">
+                <div class="milestone-reflection-grid">
+                  <span class="reflection-tag">REFLECTION</span>
+                  <p class="reflection-text">
+                    The canvas is completely open. At 16, every single day is an opportunity to learn more, build better tools, and represent Nepal with honor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 / ACHIEVEMENTS SECTION -->
+      <section class="section container reveal-on-scroll" id="achievements">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span>04 / MILESTONES &amp; PRIDE</span>
+            </div>
+            <h2 class="section-title">THINGS I'M PROUD OF</h2>
+          </div>
+          <div class="achievements-actions">
+            <button
+              type="button"
+              class="btn-secondary"
+              id="achievements-edit-mode-btn"
+              title="Edit achievements directly"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+              <span>EDIT ENTRIES</span>
+            </button>
+            <button
+              type="button"
+              class="btn-secondary"
+              id="achievements-reset-btn"
+              style="display: none;"
+              title="Reset achievements to defaults"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+              <span>RESET</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="edit-mode-indicator" id="achievements-edit-indicator" style="display: none;">
+          <span>✏️ EDIT MODE ACTIVE: Click on any achievement card to modify title, year, category, and description!</span>
+        </div>
+
+        <!-- Rendered dynamically by script.js with fallback content hardcoded -->
+        <div class="achievements-stack" id="achievements-container">
+          <!-- Fallback items in case JS loads slightly after -->
+          <div class="achievement-card glass-surface" id="achievement-card-01" data-id="ach-01">
+            <div class="achievement-grid">
+              <div class="achievement-big-number font-display">01</div>
+              <div>
+                <div class="achievement-tags-row">
+                  <span class="achievement-category font-mono">SKILL &amp; CODE</span>
+                  <span class="achievement-highlight-pill font-mono">Hands-on Mastery</span>
+                </div>
+                <h3 class="achievement-title font-display">Self-Taught Web &amp; Tech Experimenter</h3>
+                <p class="achievement-desc">
+                  Independently built and deployed live digital projects from Butwal, mastering modern web architecture and creative design tools without formal mentorship.
+                </p>
+              </div>
+              <div class="achievement-year-col">
+                <span class="achievement-year font-mono">2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="achievement-card glass-surface" id="achievement-card-02" data-id="ach-02">
+            <div class="achievement-grid">
+              <div class="achievement-big-number font-display">02</div>
+              <div>
+                <div class="achievement-tags-row">
+                  <span class="achievement-category font-mono">EXPEDITION &amp; HEALTH</span>
+                  <span class="achievement-highlight-pill font-mono">High Altitude Resilience</span>
+                </div>
+                <h3 class="achievement-title font-display">First High-Altitude Himalayan Trek</h3>
+                <p class="achievement-desc">
+                  Completed my first independent multi-day mountain trek into the Himalayan foothills, pushing personal endurance limits and documenting high-altitude landscapes.
+                </p>
+              </div>
+              <div class="achievement-year-col">
+                <span class="achievement-year font-mono">2024</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="achievement-card glass-surface" id="achievement-card-03" data-id="ach-03">
+            <div class="achievement-grid">
+              <div class="achievement-big-number font-display">03</div>
+              <div>
+                <div class="achievement-tags-row">
+                  <span class="achievement-category font-mono">CREATIVE &amp; COMMUNITY</span>
+                  <span class="achievement-highlight-pill font-mono">Organic Reach</span>
+                </div>
+                <h3 class="achievement-title font-display">Digital Content &amp; Community Builder</h3>
+                <p class="achievement-desc">
+                  Authored visual stories and creative media showcasing youth perspectives in Nepal, cultivating an engaged local network of peers passionate about technology.
+                </p>
+              </div>
+              <div class="achievement-year-col">
+                <span class="achievement-year font-mono">2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="achievement-card glass-surface" id="achievement-card-04" data-id="ach-04">
+            <div class="achievement-grid">
+              <div class="achievement-big-number font-display">04</div>
+              <div>
+                <div class="achievement-tags-row">
+                  <span class="achievement-category font-mono">MILESTONE &amp; GROWTH</span>
+                  <span class="achievement-highlight-pill font-mono">Daily Consistency</span>
+                </div>
+                <h3 class="achievement-title font-display">Academic &amp; Personal Discipline</h3>
+                <p class="achievement-desc">
+                  Balanced rigorous secondary schooling with daily coding sessions, fitness training, and continuous self-education to build a solid foundation for the future.
+                </p>
+              </div>
+              <div class="achievement-year-col">
+                <span class="achievement-year font-mono">2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 / MY INTERESTS SECTION -->
+      <section class="section interests-section reveal-on-scroll" id="interests">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span>05 / PASSIONS &amp; CURIOSITY</span>
+              </div>
+              <h2 class="section-title">THINGS I LOVE</h2>
+            </div>
+            <p class="section-subtitle font-mono" style="font-size: 0.75rem; letter-spacing: 0.15em;">
+              INTERACTIVE HORIZONTAL DRIFT · HOVER TO EXPLORE
+            </p>
+          </div>
+        </div>
+
+        <!-- Marquee Row 1 (Drift Left) -->
+        <div class="marquee-wrapper">
+          <div class="marquee-content marquee-left">
+            <!-- First set -->
+            <div class="marquee-item" data-topic="trekking"><span class="marquee-text">TREKKING</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="mountains"><span class="marquee-text">MOUNTAINS</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="nepal"><span class="marquee-text">NEPAL</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="technology"><span class="marquee-text">TECHNOLOGY</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="creativity"><span class="marquee-text">CREATIVITY</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="content"><span class="marquee-text">CONTENT</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="learning"><span class="marquee-text">LEARNING</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="photography"><span class="marquee-text">PHOTOGRAPHY</span><span class="marquee-symbol">✦</span></div>
+
+            <!-- Duplicate set for infinite loop -->
+            <div class="marquee-item" data-topic="trekking"><span class="marquee-text">TREKKING</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="mountains"><span class="marquee-text">MOUNTAINS</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="nepal"><span class="marquee-text">NEPAL</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="technology"><span class="marquee-text">TECHNOLOGY</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="creativity"><span class="marquee-text">CREATIVITY</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="content"><span class="marquee-text">CONTENT</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="learning"><span class="marquee-text">LEARNING</span><span class="marquee-symbol">✦</span></div>
+            <div class="marquee-item" data-topic="photography"><span class="marquee-text">PHOTOGRAPHY</span><span class="marquee-symbol">✦</span></div>
+          </div>
+        </div>
+
+        <!-- Marquee Row 2 (Drift Right, Outlined Text) -->
+        <div class="marquee-wrapper">
+          <div class="marquee-content marquee-right">
+            <!-- First set -->
+            <div class="marquee-item" data-topic="photography"><span class="marquee-text text-stroke">PHOTOGRAPHY</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="learning"><span class="marquee-text text-stroke">LEARNING</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="content"><span class="marquee-text text-stroke">CONTENT</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="creativity"><span class="marquee-text text-stroke">CREATIVITY</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="technology"><span class="marquee-text text-stroke">TECHNOLOGY</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="nepal"><span class="marquee-text text-stroke">NEPAL</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="mountains"><span class="marquee-text text-stroke">MOUNTAINS</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="trekking"><span class="marquee-text text-stroke">TREKKING</span><span class="marquee-symbol">—</span></div>
+
+            <!-- Duplicate set for infinite loop -->
+            <div class="marquee-item" data-topic="photography"><span class="marquee-text text-stroke">PHOTOGRAPHY</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="learning"><span class="marquee-text text-stroke">LEARNING</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="content"><span class="marquee-text text-stroke">CONTENT</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="creativity"><span class="marquee-text text-stroke">CREATIVITY</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="technology"><span class="marquee-text text-stroke">TECHNOLOGY</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="nepal"><span class="marquee-text text-stroke">NEPAL</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="mountains"><span class="marquee-text text-stroke">MOUNTAINS</span><span class="marquee-symbol">—</span></div>
+            <div class="marquee-item" data-topic="trekking"><span class="marquee-text text-stroke">TREKKING</span><span class="marquee-symbol">—</span></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <!-- Dynamic Interest Context Preview -->
+          <div class="interests-preview-card glass-surface" id="interests-preview-card">
+            <div class="interests-active-tag" id="interests-preview-tag">
+              <span class="status-dot"></span> ACTIVE FOCUS: TREKKING // EXPLORATION
+            </div>
+            <div class="interests-tagline" id="interests-preview-desc">
+              Endurance through high mountain trails, steep climbs, and alpine passes.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 / WHAT I'M BUILDING (WORK) SECTION -->
+      <section class="section container reveal-on-scroll" id="work">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span>06 / CREATIONS &amp; PROTOTYPES</span>
+            </div>
+            <h2 class="section-title">WHAT I'M BUILDING</h2>
+          </div>
+
+          <!-- Services Callout Box -->
+          <div class="services-callout-box">
+            <div class="services-callout-eyebrow">
+              <span class="status-dot"></span> DIGITAL COMMERCE &amp; WEB SERVICES
+            </div>
+            <p class="services-callout-text">
+              “I am trying to take a step in digital commerce and my friend is helping in it. If anyone wants to make a server or a website, please contact me.”
+            </p>
+            <div class="services-callout-actions">
+              <a href="#contact" class="btn-primary" id="work-contact-cta-btn">
+                <span>CONTACT ME</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+              <span class="font-mono" style="font-size: 0.72rem; color: var(--color-text-muted);">
+                Websites · Servers · Online Stores
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horizontal Projects Stack -->
+        <div class="projects-stack">
+          <!-- Project 01: The Dreamer -->
+          <article class="project-panel glass-surface" id="project-01">
+            <div class="project-grid">
+              <div class="project-visual-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80"
+                  alt="Exploring every corner of Nepal"
+                  class="project-img"
+                  loading="lazy"
+                />
+                <div class="project-img-overlay"></div>
+                <div class="project-img-meta">
+                  <span class="project-img-tag">HIMALAYAN TRAILS</span>
+                  <span>77 DISTRICTS</span>
+                </div>
+              </div>
+              <div class="project-info-col">
+                <div>
+                  <div class="project-meta-bar">
+                    <span>PROJECT 01 // EXPEDITION &amp; EXPLORATION</span>
+                    <span>LIFELONG</span>
+                  </div>
+                  <h3 class="project-title font-display">
+                    THE DREAMER: EXPLORING EVERY CORNER OF NEPAL
+                  </h3>
+                  <div class="project-subtitle">
+                    A lifelong quest to traverse all 77 districts, mountain trails, and forgotten hamlets
+                  </div>
+                  <p class="project-desc">
+                    At my core, I am a dreamer driven by an unyielding ambition: to experience, understand, and document every single corner of my motherland, Nepal. From the windswept passes of the high Himalayas to the lush riverbanks of the Terai.
+                  </p>
+                  <div class="project-tech-chips">
+                    <span class="project-tech-chip">77 Districts</span>
+                    <span class="project-tech-chip">Himalayan Trails</span>
+                    <span class="project-tech-chip">Cultural Documentation</span>
+                    <span class="project-tech-chip">Visual Storytelling</span>
+                    <span class="project-tech-chip">Mountain Passes</span>
+                  </div>
+                </div>
+                <div class="project-cta-row">
+                  <button
+                    type="button"
+                    class="btn-primary"
+                    data-action="open-project-modal"
+                    data-project="prj-01"
+                    id="open-project-btn-01"
+                  >
+                    <span>VIEW DOSSIER / DETAILS</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02: Chasing Horizons -->
+          <article class="project-panel glass-surface" id="project-02">
+            <div class="project-grid">
+              <div class="project-visual-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80"
+                  alt="Chasing Horizons: Video Vignettes"
+                  class="project-img"
+                  loading="lazy"
+                />
+                <div class="project-img-overlay"></div>
+                <div class="project-img-meta">
+                  <span class="project-img-tag">CINEMATOGRAPHY</span>
+                  <span>4K REELS</span>
+                </div>
+              </div>
+              <div class="project-info-col">
+                <div>
+                  <div class="project-meta-bar">
+                    <span>PROJECT 02 // CREATIVE CONTENT</span>
+                    <span>2026</span>
+                  </div>
+                  <h3 class="project-title font-display">
+                    Chasing Horizons: Video Vignettes
+                  </h3>
+                  <div class="project-subtitle">
+                    Short-form cinematic reels documenting the authentic Nepali spirit
+                  </div>
+                  <p class="project-desc">
+                    A continuous series of short cinematic videos and visual reels highlighting early morning street life in Butwal, hillside tea gardens, and the quiet dignity of everyday workers.
+                  </p>
+                  <div class="project-tech-chips">
+                    <span class="project-tech-chip">Premiere Pro</span>
+                    <span class="project-tech-chip">Color Grading</span>
+                    <span class="project-tech-chip">Sound Design</span>
+                  </div>
+                </div>
+                <div class="project-cta-row">
+                  <button
+                    type="button"
+                    class="btn-primary"
+                    data-action="open-project-modal"
+                    data-project="prj-02"
+                    id="open-project-btn-02"
+                  >
+                    <span>VIEW DOSSIER / DETAILS</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03: Digital Commerce & Server Solutions -->
+          <article class="project-panel glass-surface" id="project-03">
+            <div class="project-grid">
+              <div class="project-visual-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+                  alt="Digital Commerce & Server Solutions"
+                  class="project-img"
+                  loading="lazy"
+                />
+                <div class="project-img-overlay"></div>
+                <div class="project-img-meta">
+                  <span class="project-img-tag">INFRASTRUCTURE &amp; WEB</span>
+                  <span>E-COMMERCE</span>
+                </div>
+              </div>
+              <div class="project-info-col">
+                <div>
+                  <div class="project-meta-bar">
+                    <span>PROJECT 03 // DIGITAL COMMERCE</span>
+                    <span>2026</span>
+                  </div>
+                  <h3 class="project-title font-display">
+                    Digital Commerce &amp; Server Solutions
+                  </h3>
+                  <div class="project-subtitle">
+                    Custom web development, online storefronts, and server hosting setup
+                  </div>
+                  <p class="project-desc">
+                    Taking our first bold steps in digital commerce alongside my friend. We assist clients, local creators, and entrepreneurs in building fast custom websites, setting up reliable cloud servers, and launching their online presence.
+                  </p>
+                  <div class="project-tech-chips">
+                    <span class="project-tech-chip">Websites</span>
+                    <span class="project-tech-chip">Server Deployment</span>
+                    <span class="project-tech-chip">E-Commerce</span>
+                    <span class="project-tech-chip">Custom Development</span>
+                  </div>
+                </div>
+                <div class="project-cta-row">
+                  <button
+                    type="button"
+                    class="btn-primary"
+                    data-action="open-project-modal"
+                    data-project="prj-03"
+                    id="open-project-btn-03"
+                  >
+                    <span>VIEW DOSSIER / DETAILS</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 07 / MADE IN NEPAL SECTION -->
+      <section class="nepal-section reveal-on-scroll" id="nepal">
+        <div class="nepal-bg" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=2400&q=80"
+            alt=""
+            class="nepal-bg-img"
+          />
+          <div class="nepal-bg-overlay"></div>
+        </div>
+
+        <div class="nepal-content">
+          <div class="nepal-eyebrow">
+            <span>● ROOTS &amp; HERITAGE // BUTWAL · 100m – 8,848m ●</span>
+          </div>
+
+          <h2 class="nepal-heading">
+            MADE IN <span class="text-stroke">NEPAL.</span>
+          </h2>
+
+          <div class="nepal-card glass-surface">
+            <p class="nepal-story">
+              Nepal is more than my homeland — it is the heartbeat behind everything I create. Born and raised in Butwal, where the Tarai plains meet the green Chure hills, I grew up with the mighty Himalayan peaks watching from the northern horizon. In our mountains, you learn humility; in our people, you witness an unshakeable resilience. Every step I take forward in technology and life carries the soul, warmth, and relentless perseverance of Nepal.
+            </p>
+            <div class="nepal-footer-pills">
+              <span>THE HIMALAYAS TEACH HUMILITY</span>
+              <span>BUTWAL, LUMBINI PROVINCE</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 / SOCIAL MEDIA SECTION -->
+      <section class="section container reveal-on-scroll" id="social">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span>07 / SOCIAL DISPATCH</span>
+            </div>
+            <h2 class="section-title">FIND ME ONLINE</h2>
+          </div>
+          <div class="font-mono" style="font-size: 0.75rem; color: var(--color-text-muted);">
+            <span class="status-dot"></span> OPEN CHANNELS · GLOBAL NETWORKS
+          </div>
+        </div>
+
+        <div class="social-grid">
+          <!-- Instagram Card -->
+          <a
+            href="https://www.instagram.com/_prajwal_poudel_/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card glass-surface"
+            id="social-instagram-link"
+          >
+            <div class="social-card-top">
+              <div class="social-platform-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <span>INSTAGRAM // PRIMARY DISPATCH</span>
+              </div>
+              <div class="social-arrow-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
+            </div>
+            <div>
+              <span class="social-handle font-display">@_prajwal_poudel_</span>
+              <p class="social-desc">
+                Daily stories, mountain trek snapshots, lifestyle glimpses, and personal moments.
+              </p>
+            </div>
+          </a>
+
+          <!-- Facebook Card -->
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card glass-surface"
+            id="social-facebook-link"
+          >
+            <div class="social-card-top">
+              <div class="social-platform-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                <span>FACEBOOK // COMMUNITY</span>
+              </div>
+              <div class="social-arrow-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
+            </div>
+            <div>
+              <span class="social-handle font-display">Prajwal Poudel</span>
+              <p class="social-desc">
+                Friends, local school community, and life updates from Butwal.
+              </p>
+              <div class="social-edit-trigger" id="edit-facebook-url-btn">
+                ⚙️ Click to connect your custom Facebook URL
+              </div>
+            </div>
+          </a>
+
+          <!-- GitHub Card -->
+          <a
+            href="https://github.com/poudelprajwal0303-dotcom"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card glass-surface"
+            id="social-github-link"
+          >
+            <div class="social-card-top">
+              <div class="social-platform-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GITHUB // CODE REPOSITORIES</span>
+              </div>
+              <div class="social-arrow-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
+            </div>
+            <div>
+              <span class="social-handle font-display">prajwalpoudel</span>
+              <p class="social-desc">
+                Source code, web prototypes, experiments, and technical learning repositories.
+              </p>
+            </div>
+          </a>
+
+          <!-- YouTube Card -->
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-card glass-surface"
+            id="social-youtube-link"
+          >
+            <div class="social-card-top">
+              <div class="social-platform-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                <span>YOUTUBE // VISUAL MEDIA</span>
+              </div>
+              <div class="social-arrow-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </div>
+            </div>
+            <div>
+              <span class="social-handle font-display">@PrajwalPoudel</span>
+              <p class="social-desc">
+                Video vignettes, creative edits, and upcoming travel documentaries.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- 09 / LET'S CONNECT (CONTACT) SECTION -->
+      <section class="section container reveal-on-scroll" id="contact">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span>08 / DIRECT INQUIRY &amp; DISPATCH</span>
+            </div>
+            <h2 class="section-title">LET'S CONNECT.</h2>
+          </div>
+          <p class="section-subtitle">
+            Whether you want to build a website, set up a server, collaborate in digital commerce, talk about mountains, or say hello.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Contact Information -->
+          <div class="contact-direct-stack">
+            <div class="contact-box glass-surface">
+              <span class="spec-label">OFFICIAL DIRECT INBOX</span>
+              <div class="contact-email-val" id="contact-email-display">
+                poudelprajwal0303@gmail.com
+              </div>
+              <div class="contact-btn-row">
+                <button
+                  type="button"
+                  class="btn-primary"
+                  id="contact-copy-email-btn"
+                  title="Copy email to clipboard"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span>COPY EMAIL</span>
+                </button>
+
+                <a
+                  href="mailto:poudelprajwal0303@gmail.com"
+                  class="btn-secondary"
+                  id="contact-mailto-btn"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                  <span>OPEN CLIENT</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Instant Messaging Channels -->
+            <div class="contact-box glass-surface">
+              <span class="spec-label">INSTANT MESSAGING</span>
+              <div style="display: flex; flex-direction: column;">
+                <a
+                  href="https://www.instagram.com/_prajwal_poudel_/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="messaging-link-row"
+                >
+                  <span style="font-size: 0.95rem; font-weight: 500;">Instagram Direct Message</span>
+                  <span class="font-mono" style="font-size: 0.75rem; color: var(--color-text-muted);">@_prajwal_poudel_ ↗</span>
+                </a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="messaging-link-row"
+                >
+                  <span style="font-size: 0.95rem; font-weight: 500;">Facebook Messenger</span>
+                  <span class="font-mono" style="font-size: 0.75rem; color: var(--color-text-muted);">Prajwal Poudel ↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Message Form -->
+          <div class="contact-form-card glass-surface">
+            <h3 class="font-display" style="font-size: 1.5rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1.5rem;">
+              SEND A MESSAGE
+            </h3>
+            <form id="contact-message-form">
+              <div class="form-group">
+                <label for="contact-sender-name" class="form-label">YOUR NAME</label>
+                <input
+                  type="text"
+                  id="contact-sender-name"
+                  class="form-input"
+                  placeholder="e.g. John Doe"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-sender-email" class="form-label">YOUR EMAIL ADDRESS</label>
+                <input
+                  type="email"
+                  id="contact-sender-email"
+                  class="form-input"
+                  placeholder="e.g. john@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-sender-message" class="form-label">PROJECT BRIEF OR MESSAGE</label>
+                <textarea
+                  id="contact-sender-message"
+                  class="form-textarea"
+                  placeholder="Tell me about your website project, server requirements, or question..."
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" id="contact-form-submit-btn" style="width: 100%; justify-content: center; padding: 0.85rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>SEND MESSAGE VIA EMAIL</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 / THE STORY SO FAR (BIOGRAPHY) SECTION -->
+      <section class="section container reveal-on-scroll" id="biography">
+        <div class="section-eyebrow">
+          <span class="eyebrow-line"></span>
+          <span>09 / CLOSING ESSAY</span>
+        </div>
+
+        <div class="biography-card glass-surface">
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <h2 class="section-title">THE STORY SO FAR</h2>
+            <span class="font-mono" style="font-size: 0.75rem; color: var(--color-text-muted); letter-spacing: 0.2em;">
+              BUTWAL, NEPAL · DOCUMENTED IN REAL-TIME
+            </span>
+          </div>
+
+          <p class="biography-lead">
+            I was born and raised in Butwal, Nepal — a vibrant junction city nestled against the green Chure hills. Growing up in a middle-class household, my world was shaped by hard work, simplicity, and the towering silhouette of the Himalayas on the northern horizon.
+          </p>
+
+          <div class="biography-divider"></div>
+
+          <p class="biography-body">
+            My introduction to computers and the internet changed everything. In a small room with quiet concentration as my closest companion, I began exploring web technologies, visual storytelling, and digital commerce. Without formal coding academies or mentors, I taught myself by reading documentation, testing prototypes, and learning from mistakes.
+          </p>
+
+          <p class="biography-body">
+            Alongside my passion for technology is an enduring devotion to Nepal's mountains and trails. Trekking into the high hills taught me resilience, patience, and humility. Today, at 16, I'm collaborating with friends to build digital commerce solutions, deploy reliable web servers, and document every step of my journey.
+          </p>
+
+          <div class="biography-kicker-row">
+            <span class="biography-kicker">“The journey has only started.”</span>
+            <span class="font-mono" style="font-size: 0.8rem; color: var(--color-text-muted);">
+              — PRAJWAL POUDEL · 2026
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-top-row">
+          <div>
+            <div class="brand-name" style="font-size: 1.25rem;">PRAJWAL POUDEL</div>
+            <div class="font-mono" style="font-size: 0.72rem; color: var(--color-text-muted); margin-top: 0.35rem;">
+              BUTWAL, NEPAL · 16 YEARS OLD · CREATOR &amp; BUILDER
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <a href="https://www.instagram.com/_prajwal_poudel_/?hl=en" target="_blank" rel="noopener noreferrer" class="footer-link">INSTAGRAM</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-link">FACEBOOK</a>
+            <a href="https://github.com/poudelprajwal0303-dotcom" target="_blank" rel="noopener noreferrer" class="footer-link">GITHUB</a>
+            <button type="button" class="footer-link" id="footer-back-to-top-btn" style="color: var(--color-text-primary);">
+              BACK TO TOP ↑
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-bottom-row">
+          <div>
+            © 2026 Prajwal Poudel. All rights reserved. Plain HTML5, CSS3, &amp; Vanilla JavaScript.
+          </div>
+          <div class="footer-quote">
+            “Still becoming.”
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL 1: PROJECT DOSSIER MODAL -->
+    <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+      <div class="modal-card">
+        <button type="button" class="modal-close-btn" id="close-project-modal-btn" aria-label="Close modal">
+          ✕
+        </button>
+
+        <div class="modal-image-header">
+          <img src="" alt="" id="modal-project-img" />
+          <div class="modal-image-gradient"></div>
+          <div class="modal-image-title-box">
+            <div class="font-mono" style="font-size: 0.72rem; color: var(--color-accent-emerald); letter-spacing: 0.2em; text-transform: uppercase;" id="modal-project-category">
+              PROJECT DOSSIER
+            </div>
+            <h3 class="font-display" style="font-size: clamp(1.5rem, 3.5vw, 2.5rem); font-weight: 900; text-transform: uppercase; color: #FFFFFF; margin-top: 0.25rem;" id="modal-project-title">
+              Project Title
+            </h3>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-muted); border-bottom: 1px solid var(--color-border); padding-bottom: 1rem;">
+            <div>TIMELINE: <span id="modal-project-timeline" style="color: var(--color-text-primary);">2026</span></div>
+            <div>ROLE: <span id="modal-project-role" style="color: var(--color-text-primary);">Creator</span></div>
+          </div>
+
+          <div>
+            <span class="spec-label">OVERVIEW &amp; MISSION</span>
+            <p id="modal-project-desc" style="font-size: 1.05rem; line-height: 1.7; color: var(--color-text-secondary); margin-top: 0.5rem;">
+              Description goes here...
+            </p>
+          </div>
+
+          <div>
+            <span class="spec-label">TAGS &amp; TECHNOLOGIES</span>
+            <div class="project-tech-chips" id="modal-project-tech-chips"></div>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; padding-top: 1rem; border-top: 1px solid var(--color-border);">
+            <button type="button" class="btn-secondary" id="bottom-close-project-modal-btn">
+              CLOSE DOSSIER
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 2: PHOTO CUSTOMIZER MODAL -->
+    <div class="modal-backdrop" id="photo-modal" role="dialog" aria-modal="true" aria-labelledby="photo-modal-title">
+      <div class="modal-card photo-modal-card">
+        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--color-border); padding-bottom: 1rem;">
+          <div>
+            <h3 class="font-display" style="font-size: 1.25rem; font-weight: 800; text-transform: uppercase;" id="photo-modal-title">
+              PORTRAIT PHOTO PREVIEW
+            </h3>
+            <span class="font-mono" style="font-size: 0.72rem; color: var(--color-text-muted);">
+              Customize your portrait across the portfolio
+            </span>
+          </div>
+          <button type="button" class="modal-close-btn" id="close-photo-modal-btn" style="position: static;" aria-label="Close modal">
+            ✕
+          </button>
+        </div>
+
+        <!-- Preview Box -->
+        <div class="photo-preview-wrap">
+          <div class="photo-preview-box">
+            <img src="/prajwal_portrait.jpg" alt="Preview" id="photo-customizer-preview-img" />
+          </div>
+        </div>
+
+        <!-- Method 1: Local File -->
+        <div style="margin-bottom: 1.25rem;">
+          <span class="spec-label">METHOD 1: UPLOAD FROM DEVICE</span>
+          <label class="btn-secondary" style="width: 100%; justify-content: center; cursor: pointer; padding: 0.75rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            <span>SELECT LOCAL IMAGE (JPG, PNG, WEBP)</span>
+            <input type="file" id="photo-modal-file-input" accept="image/*" style="display: none;" />
+          </label>
+        </div>
+
+        <!-- Method 2: Image URL -->
+        <div style="margin-bottom: 1.5rem;">
+          <span class="spec-label">METHOD 2: PASTE WEB IMAGE URL</span>
+          <div style="display: flex; gap: 0.5rem;">
+            <input
+              type="url"
+              id="photo-modal-url-input"
+              class="form-input"
+              placeholder="https://images.unsplash.com/..."
+              style="padding: 0.65rem 0.85rem;"
+            />
+            <button type="button" class="btn-secondary" id="apply-photo-url-btn" style="white-space: nowrap;">
+              APPLY
+            </button>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--color-border); padding-top: 1.25rem;">
+          <button type="button" class="btn-secondary" id="reset-photo-modal-btn">
+            RESTORE ORIGINAL
+          </button>
+          <button type="button" class="btn-primary" id="save-photo-modal-btn">
+            SAVE PORTRAIT
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 3: ACHIEVEMENT EDIT MODAL -->
+    <div class="modal-backdrop" id="achievement-modal" role="dialog" aria-modal="true" aria-labelledby="achievement-modal-title">
+      <div class="modal-card photo-modal-card">
+        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--color-border); padding-bottom: 1rem;">
+          <div>
+            <h3 class="font-display" style="font-size: 1.25rem; font-weight: 800; text-transform: uppercase;" id="achievement-modal-title">
+              EDIT ACHIEVEMENT
+            </h3>
+            <span class="font-mono" style="font-size: 0.72rem; color: var(--color-text-muted);">
+              Update this milestone entry
+            </span>
+          </div>
+          <button type="button" class="modal-close-btn" id="close-achievement-modal-btn" style="position: static;" aria-label="Close modal">
+            ✕
+          </button>
+        </div>
+
+        <form id="achievement-edit-form" style="margin-top: 1.25rem;">
+          <input type="hidden" id="edit-achievement-id" />
+
+          <div class="form-group">
+            <label for="edit-achievement-title" class="form-label">TITLE</label>
+            <input type="text" id="edit-achievement-title" class="form-input" required />
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label for="edit-achievement-year" class="form-label">YEAR</label>
+              <input type="text" id="edit-achievement-year" class="form-input" required />
+            </div>
+            <div class="form-group">
+              <label for="edit-achievement-category" class="form-label">CATEGORY</label>
+              <input type="text" id="edit-achievement-category" class="form-input" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="edit-achievement-highlight" class="form-label">HIGHLIGHT PILL</label>
+            <input type="text" id="edit-achievement-highlight" class="form-input" />
+          </div>
+
+          <div class="form-group">
+            <label for="edit-achievement-desc" class="form-label">DESCRIPTION</label>
+            <textarea id="edit-achievement-desc" class="form-textarea" rows="3" required></textarea>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 0.75rem; border-top: 1px solid var(--color-border); padding-top: 1.25rem;">
+            <button type="button" class="btn-secondary" id="cancel-achievement-modal-btn">
+              CANCEL
+            </button>
+            <button type="submit" class="btn-primary">
+              SAVE CHANGES
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Script File -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
