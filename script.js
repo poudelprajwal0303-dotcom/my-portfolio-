@@ -4,7 +4,7 @@
  */
 
 // Default data constants
-const DEFAULT_PORTRAIT = '/prajwal_portrait.jpg';
+const DEFAULT_PORTRAIT = './prajwal_portrait.jpg';
 const DEFAULT_EMAIL = 'poudelprajwal0303@gmail.com';
 
 const DEFAULT_ACHIEVEMENTS = [
