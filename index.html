@@ -65,19 +65,7 @@
             </svg>
           </button>
 
-          <button
-            type="button"
-            class="nav-action-pill"
-            id="open-photo-modal-header-btn"
-            data-action="open-photo-modal"
-            title="Customize personal portrait"
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-              <circle cx="12" cy="13" r="4"></circle>
-            </svg>
-            <span>MY PHOTO</span>
-          </button>
+
 
           <button
             type="button"
@@ -221,29 +209,7 @@
               />
               <div class="portrait-gradient-overlay"></div>
 
-              <div class="portrait-controls">
-                <button
-                  type="button"
-                  class="portrait-btn"
-                  id="portrait-replace-btn"
-                  data-action="open-photo-modal"
-                  title="Replace portrait photo"
-                >
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-                  <span>REPLACE</span>
-                </button>
 
-                <button
-                  type="button"
-                  class="portrait-btn"
-                  id="portrait-reset-btn"
-                  style="display: none;"
-                  title="Reset to official portrait"
-                >
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
-                  <span>RESET</span>
-                </button>
-              </div>
 
               <div class="portrait-card-watermark">
                 <div>
@@ -257,13 +223,8 @@
               </div>
             </div>
 
-            <!-- Subcaption with direct file upload trigger -->
+            <!-- Subcaption -->
             <div class="portrait-subcaption">
-              <label for="portrait-direct-file-input" style="cursor: pointer; display: inline-flex; align-items: center; gap: 0.4rem; color: var(--color-text-secondary);" title="Upload photo file directly">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
-                <span>UPLOAD OWN IMAGE</span>
-              </label>
-              <input type="file" id="portrait-direct-file-input" accept="image/*" style="display: none;" />
               <span>NEPAL HIMALAYAS</span>
             </div>
           </div>
@@ -791,7 +752,7 @@
             <div class="project-grid">
               <div class="project-visual-wrapper">
                 <img
-                  src="https://www.reddit.com/r/pics/comments/a9r61/nepal_pic/#lightbox"
+                  src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80"
                   alt="Chasing Horizons: Video Vignettes"
                   class="project-img"
                   loading="lazy"
@@ -799,7 +760,7 @@
                 <div class="project-img-overlay"></div>
                 <div class="project-img-meta">
                   <span class="project-img-tag">CINEMATOGRAPHY</span>
-                  <span>4K REELS</span>
+                  <span>Photos </span>
                 </div>
               </div>
               <div class="project-info-col">
@@ -1285,68 +1246,7 @@
       </div>
     </div>
 
-    <!-- MODAL 2: PHOTO CUSTOMIZER MODAL -->
-    <div class="modal-backdrop" id="photo-modal" role="dialog" aria-modal="true" aria-labelledby="photo-modal-title">
-      <div class="modal-card photo-modal-card">
-        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--color-border); padding-bottom: 1rem;">
-          <div>
-            <h3 class="font-display" style="font-size: 1.25rem; font-weight: 800; text-transform: uppercase;" id="photo-modal-title">
-              PORTRAIT PHOTO PREVIEW
-            </h3>
-            <span class="font-mono" style="font-size: 0.72rem; color: var(--color-text-muted);">
-              Customize your portrait across the portfolio
-            </span>
-          </div>
-          <button type="button" class="modal-close-btn" id="close-photo-modal-btn" style="position: static;" aria-label="Close modal">
-            ✕
-          </button>
-        </div>
 
-        <!-- Preview Box -->
-        <div class="photo-preview-wrap">
-          <div class="photo-preview-box">
-            <img src="./prajwal_portrait.jpg" alt="Preview" id="photo-customizer-preview-img" />
-          </div>
-        </div>
-
-        <!-- Method 1: Local File -->
-        <div style="margin-bottom: 1.25rem;">
-          <span class="spec-label">METHOD 1: UPLOAD FROM DEVICE</span>
-          <label class="btn-secondary" style="width: 100%; justify-content: center; cursor: pointer; padding: 0.75rem;">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
-            <span>SELECT LOCAL IMAGE (JPG, PNG, WEBP)</span>
-            <input type="file" id="photo-modal-file-input" accept="image/*" style="display: none;" />
-          </label>
-        </div>
-
-        <!-- Method 2: Image URL -->
-        <div style="margin-bottom: 1.5rem;">
-          <span class="spec-label">METHOD 2: PASTE WEB IMAGE URL</span>
-          <div style="display: flex; gap: 0.5rem;">
-            <input
-              type="url"
-              id="photo-modal-url-input"
-              class="form-input"
-              placeholder="https://images.unsplash.com/..."
-              style="padding: 0.65rem 0.85rem;"
-            />
-            <button type="button" class="btn-secondary" id="apply-photo-url-btn" style="white-space: nowrap;">
-              APPLY
-            </button>
-          </div>
-        </div>
-
-        <!-- Actions -->
-        <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--color-border); padding-top: 1.25rem;">
-          <button type="button" class="btn-secondary" id="reset-photo-modal-btn">
-            RESTORE ORIGINAL
-          </button>
-          <button type="button" class="btn-primary" id="save-photo-modal-btn">
-            SAVE PORTRAIT
-          </button>
-        </div>
-      </div>
-    </div>
 
     <!-- MODAL 3: ACHIEVEMENT EDIT MODAL -->
     <div class="modal-backdrop" id="achievement-modal" role="dialog" aria-modal="true" aria-labelledby="achievement-modal-title">

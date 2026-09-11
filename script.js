@@ -100,7 +100,7 @@ const PROJECTS_DATA = {
     category: 'CREATIVE CONTENT / CINEMATOGRAPHY',
     year: '2026',
     role: 'Director & Editor',
-    imageUrl: 'https://www.reddit.com/r/pics/comments/a9r61/nepal_pic/#lightbox',
+    imageUrl: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80',
     description: 'A continuous series of short cinematic videos and visual reels highlighting early morning street life in Butwal, hillside tea gardens, and the quiet dignity of everyday workers.',
     technologies: ['Premiere Pro', 'Color Grading', 'Sound Design']
   },
@@ -135,7 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initClock();
   initNavbar();
   initScrollSpy();
-  initPhotoCustomizer();
   initJourney();
   initAchievements();
   initInterests();
@@ -287,116 +286,6 @@ function initScrollSpy() {
 // ==========================================================================
 // Photo Customizer & Portrait System
 // ==========================================================================
-function initPhotoCustomizer() {
-  updatePortraitsInDOM(state.currentPhoto);
-
-  const modal = document.getElementById('photo-modal');
-  const openBtns = document.querySelectorAll('[data-action="open-photo-modal"]');
-  const closeBtn = document.getElementById('close-photo-modal-btn');
-  const previewImg = document.getElementById('photo-customizer-preview-img');
-  const fileInput = document.getElementById('photo-modal-file-input');
-  const directFileInput = document.getElementById('portrait-direct-file-input');
-  const urlInput = document.getElementById('photo-modal-url-input');
-  const applyUrlBtn = document.getElementById('apply-photo-url-btn');
-  const saveBtn = document.getElementById('save-photo-modal-btn');
-  const resetBtn = document.getElementById('reset-photo-modal-btn');
-  const directResetBtn = document.getElementById('portrait-reset-btn');
-
-  let pendingPhoto = state.currentPhoto;
-
-  function openModal() {
-    pendingPhoto = state.currentPhoto;
-    if (previewImg) previewImg.src = pendingPhoto;
-    if (urlInput) urlInput.value = '';
-    modal?.classList.add('open');
-  }
-
-  function closeModal() {
-    modal?.classList.remove('open');
-  }
-
-  openBtns.forEach(btn => btn.addEventListener('click', openModal));
-  closeBtn?.addEventListener('click', closeModal);
-
-  modal?.addEventListener('click', (e) => {
-    if (e.target === modal) closeModal();
-  });
-
-  // Handle local file upload
-  function handleFile(file) {
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      if (e.target?.result) {
-        pendingPhoto = e.target.result;
-        if (previewImg) previewImg.src = pendingPhoto;
-      }
-    };
-    reader.readAsDataURL(file);
-  }
-
-  fileInput?.addEventListener('change', (e) => handleFile(e.target.files[0]));
-
-  // Direct file input on portrait frame
-  directFileInput?.addEventListener('change', (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        if (event.target?.result) {
-          saveNewPhoto(event.target.result);
-          showToast('Portrait photo updated successfully!');
-        }
-      };
-      reader.readAsDataURL(file);
-    }
-  });
-
-  applyUrlBtn?.addEventListener('click', () => {
-    const url = urlInput?.value.trim();
-    if (url) {
-      pendingPhoto = url;
-      if (previewImg) previewImg.src = pendingPhoto;
-      showToast('Image preview updated');
-    }
-  });
-
-  saveBtn?.addEventListener('click', () => {
-    saveNewPhoto(pendingPhoto);
-    closeModal();
-    showToast('Portrait photo saved!');
-  });
-
-  resetBtn?.addEventListener('click', () => {
-    saveNewPhoto(DEFAULT_PORTRAIT);
-    closeModal();
-    showToast('Portrait reset to official original!');
-  });
-
-  directResetBtn?.addEventListener('click', () => {
-    saveNewPhoto(DEFAULT_PORTRAIT);
-    showToast('Portrait reset to official original!');
-  });
-}
-
-function saveNewPhoto(url) {
-  state.currentPhoto = url;
-  localStorage.setItem('prajwal_photo', url);
-  updatePortraitsInDOM(url);
-}
-
-function updatePortraitsInDOM(url) {
-  const portraits = document.querySelectorAll('.dynamic-portrait-img');
-  portraits.forEach(img => {
-    img.src = url;
-  });
-
-  const directResetBtn = document.getElementById('portrait-reset-btn');
-  if (directResetBtn) {
-    directResetBtn.style.display = (url !== DEFAULT_PORTRAIT) ? 'inline-flex' : 'none';
-  }
-}
-
 // ==========================================================================
 // Journey Milestones Accordion
 // ==========================================================================
