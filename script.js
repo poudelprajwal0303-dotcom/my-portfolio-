@@ -132,6 +132,7 @@ const state = {
 // ==========================================================================
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
+  initAudio();
   initClock();
   initNavbar();
   initScrollSpy();
@@ -147,6 +148,43 @@ document.addEventListener('DOMContentLoaded', () => {
 // ==========================================================================
 // Theme Toggle (Dark / Light)
 // ==========================================================================
+function initAudio() {
+  const audio = document.getElementById('bg-music');
+  const btn = document.getElementById('audio-toggle-btn');
+  const mutedIcon = btn?.querySelector('.audio-muted-icon');
+  const playingIcon = btn?.querySelector('.audio-playing-icon');
+
+  if (!audio || !btn) return;
+
+  // Set default volume slightly lower for background music
+  audio.volume = 0.3;
+  let isToggling = false;
+
+  btn.addEventListener('click', async () => {
+    if (isToggling) return;
+    isToggling = true;
+    
+    try {
+      if (audio.paused) {
+        await audio.play();
+        if(mutedIcon) mutedIcon.style.display = 'none';
+        if(playingIcon) playingIcon.style.display = 'block';
+        showToast('Background music playing');
+      } else {
+        audio.pause();
+        if(mutedIcon) mutedIcon.style.display = 'block';
+        if(playingIcon) playingIcon.style.display = 'none';
+        showToast('Background music paused');
+      }
+    } catch (err) {
+      console.error("Audio playback failed:", err);
+      showToast('Click the document first, or check audio source.');
+    } finally {
+      isToggling = false;
+    }
+  });
+}
+
 function initTheme() {
   document.documentElement.setAttribute('data-theme', state.theme);
   updateThemeToggleUI();
